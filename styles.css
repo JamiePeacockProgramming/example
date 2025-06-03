@@ -1,0 +1,249 @@
+body {
+  background: linear-gradient(135deg, #181f2a 0%, #232946 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  color: #e0e7ef;
+  transition: background 0.7s cubic-bezier(.4,2,.6,1);
+}
+.landing-container {
+  max-width: 700px;
+  margin: 4em auto 0 auto;
+  background: rgba(36, 41, 61, 0.97);
+  border-radius: 22px;
+  box-shadow: 0 8px 32px #11182755;
+  padding: 2.5em 2em 2em 2em;
+  text-align: center;
+  animation: fadeInUp 1.2s cubic-bezier(.4,2,.6,1);
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.landing-title {
+  color: #38bdf8;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 12px #2563eb44;
+  transition: color 0.3s;
+}
+.landing-subtitle {
+  color: #fbbf24;
+  font-size: 1.3em;
+  margin-bottom: 1.5em;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 8px #f59e4244;
+  transition: color 0.3s;
+}
+.landing-description {
+  color: #e0e7ef;
+  font-size: 1.15em;
+  margin-bottom: 2em;
+  line-height: 1.6;
+  transition: color 0.3s;
+}
+.cta-btn {
+  background: linear-gradient(90deg, #38bdf8 60%, #f59e42 100%);
+  color: #181f2a;
+  border: none;
+  border-radius: 30px;
+  padding: 1em 2.5em;
+  font-size: 1.25em;
+  font-weight: bold;
+  box-shadow: 0 2px 16px #38bdf855;
+  cursor: pointer;
+  margin-top: 1em;
+  transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+.cta-btn:hover, .cta-btn:focus {
+  background: linear-gradient(90deg, #f59e42 60%, #38bdf8 100%);
+  color: #fff;
+  transform: scale(1.06) rotate(-1deg);
+  box-shadow: 0 4px 24px #f59e4288;
+  text-decoration: none;
+}
+.cta-btn:active {
+  transform: scale(0.98);
+}
+.grade-badges {
+  margin: 2em 0 1em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7em;
+}
+.grade-badge {
+  background: #232946;
+  color: #38bdf8;
+  border-radius: 18px;
+  padding: 0.5em 1.2em;
+  font-size: 1em;
+  font-weight: bold;
+  opacity: 0.85;
+  box-shadow: 0 2px 8px #181f2a44;
+  transition: background 0.3s, color 0.3s, opacity 0.3s, transform 0.2s;
+  border: 2px solid #232946;
+  cursor: pointer;
+  outline: none;
+}
+.grade-badge.highlight {
+  background: #f59e42;
+  color: #181f2a;
+  opacity: 1;
+  border: 2px solid #38bdf8;
+  transform: scale(1.08);
+}
+.grade-badge:hover, .grade-badge:focus {
+  background: #38bdf8;
+  color: #181f2a;
+  opacity: 1;
+  transform: scale(1.08) rotate(-2deg);
+  border-color: #f59e42;
+}
+footer {
+  text-align: center;
+  margin: 2em 0 1em 0;
+  color: #38bdf8;
+  font-size: 1em;
+  letter-spacing: 0.5px;
+  transition: color 0.3s;
+}
+
+/* Button link styles for navigation */
+a.cta-btn[href*="dashboard"] {
+  background: linear-gradient(90deg, #38bdf8 60%, #f59e42 100%);
+}
+a.cta-btn[href*="dashboard"]:hover, a.cta-btn[href*="dashboard"]:focus {
+  background: linear-gradient(90deg, #f59e42 60%, #38bdf8 100%);
+}
+
+a.cta-btn[href*="profile"] {
+  background: linear-gradient(90deg, #fbbf24 60%, #38bdf8 100%);
+  color: #232946;
+}
+a.cta-btn[href*="profile"]:hover, a.cta-btn[href*="profile"]:focus {
+  background: linear-gradient(90deg, #38bdf8 60%, #fbbf24 100%);
+  color: #fff;
+}
+
+a.cta-btn[href*="quizes"] {
+  background: linear-gradient(90deg, #f59e42 60%, #38bdf8 100%);
+  color: #232946;
+}
+a.cta-btn[href*="quizes"]:hover, a.cta-btn[href*="quizes"]:focus {
+  background: linear-gradient(90deg, #38bdf8 60%, #f59e42 100%);
+  color: #fff;
+}
+.signup-container {
+  max-width: 420px;
+  margin: 4em auto 0 auto;
+  background: rgba(36, 41, 61, 0.97);
+  border-radius: 22px;
+  box-shadow: 0 8px 32px #11182755;
+  padding: 2.5em 2em 2em 2em;
+  text-align: center;
+  animation: fadeInUp 1.2s cubic-bezier(.4,2,.6,1);
+}
+
+.signup-title {
+  color: #38bdf8;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 12px #2563eb44;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1em;
+  margin-top: 1.5em;
+  align-items: center;
+}
+
+.signup-form > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-form label {
+  color: #fbbf24;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  text-align: left;
+  letter-spacing: 0.5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.signup-form input,
+.signup-form select {
+  padding: 0.7em 1em;
+  border-radius: 10px;
+  border: 1.5px solid #38bdf8;
+  background: #232946;
+  color: #e0e7ef;
+  font-size: 1em;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  margin-bottom: 0.2em;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+  border: 1.5px solid #f59e42;
+  box-shadow: 0 0 0 2px #f59e4288;
+}
+
+.signup-btn {
+  background: linear-gradient(90deg, #38bdf8 60%, #f59e42 100%);
+  color: #181f2a;
+  border: none;
+  border-radius: 30px;
+  padding: 1em 2.5em;
+  font-size: 1.15em;
+  font-weight: bold;
+  box-shadow: 0 2px 16px #38bdf855;
+  cursor: pointer;
+  margin-top: 0.5em;
+  transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.signup-btn:hover, .signup-btn:focus {
+  background: linear-gradient(90deg, #f59e42 60%, #38bdf8 100%);
+  color: #fff;
+  transform: scale(1.06) rotate(-1deg);
+  box-shadow: 0 4px 24px #f59e4288;
+}
+
+.login-link {
+  display: block;
+  margin-top: 1.5em;
+  color: #38bdf8;
+  text-decoration: underline;
+  font-size: 1em;
+  transition: color 0.2s;
+}
+
+.login-link:hover {
+  color: #fbbf24;
+}

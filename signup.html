@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up - EduTrack SA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="signup-container">
+    <div class="signup-title">Create Your Account</div>
+    <form class="signup-form" autocomplete="off">
+      <div>
+        <label for="child-name">Child's Name</label>
+        <input type="text" id="child-name" name="child-name" required autocomplete="given-name">
+      </div>
+      <div>
+        <label for="child-surname">Child's Surname</label>
+        <input type="text" id="child-surname" name="child-surname" required autocomplete="family-name">
+      </div>
+      <div>
+        <label for="child-age">Age</label>
+        <input type="number" id="child-age" name="child-age" min="4" max="20" required>
+      </div>
+      <div>
+        <label for="child-grade">Grade</label>
+        <select id="child-grade" name="child-grade" required>
+          <option value="">Select Grade</option>
+          <option value="R">Grade R</option>
+          <option value="1">Grade 1</option>
+          <option value="2">Grade 2</option>
+          <option value="3">Grade 3</option>
+          <option value="4">Grade 4</option>
+          <option value="5">Grade 5</option>
+          <option value="6">Grade 6</option>
+          <option value="7">Grade 7</option>
+          <option value="8">Grade 8</option>
+          <option value="9">Grade 9</option>
+          <option value="10">Grade 10</option>
+          <option value="11">Grade 11</option>
+          <option value="12">Grade 12</option>
+        </select>
+      </div>
+      <div>
+        <label for="parent-email">Parent Email Address</label>
+        <input type="email" id="parent-email" name="parent-email" required autocomplete="email">
+      </div>
+      <div>
+        <label for="parent-password">Password</label>
+        <input type="password" id="parent-password" name="parent-password" required autocomplete="new-password">
+      </div>
+      <button type="submit" class="signup-btn">Sign Up</button>
+    </form>
+    <a href="login.html" class="login-link">Already have an account? Log in</a>
+  </div>
+  <footer>
+    &copy; 2025 EduTrack SA &mdash; Empowering South African Learners
+  </footer>
+</body>
+</html>
